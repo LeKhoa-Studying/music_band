@@ -1,0 +1,10 @@
+Link template: https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+
+*Các kỹ thuật sử dụng trong project:
++ html + css cơ bản
++ javascript cơ bản
++ git cơ bản
+
+*Kiến thức cần nhớ
+
+
