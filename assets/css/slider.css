@@ -1,0 +1,24 @@
+#slider {
+  position: relative;
+  top: 46px;
+  background: url("/music_band/assets/imgs/slider/newyork.jpg") top center/cover
+    no-repeat;
+  padding-top: 50%;
+}
+
+#slider .text-section {
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  text-align: center;
+}
+
+#slider .text-heading {
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: 100;
+}
+
+#slider .text-desc {
+  margin: 15px 0;
+}

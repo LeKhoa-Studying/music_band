@@ -5,6 +5,25 @@ Link template: https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 + javascript cơ bản
 + git cơ bản
 
-*Kiến thức cần nhớ
+*Kiến thức cần nhớ + notes
+
+1. Đã config username và mail git để tiến hành push local to github
+
+ git config --global user.email "mail"
+ git config --global user.name "name user on git"
+
+2. push đoạn code đầu đã hoàn thiện 100% vào branchbranch master
+
+=> không cần lệnh [git branch -M main] vì lệnh này chỉ là rename branch name bất kỳ thành main
+
+3. tạo branch mới tên là [main] và add codes chưa finish 100% vào đây, khi nào full mới tiến hành merge branch
+
+git checkout -b main : lệnh tạo branch mới và lập tức nhảy sang branch đó
+
+git push -u origin main: Đẩy nhánh mới lên remote repository
+
+
+4. Merge branch
+
 
 
