@@ -25,30 +25,13 @@
   color: #000;
 }
 
-#nav li .arrow-down {
-  font-size: 12px;
-}
-
-#header .btn-search {
-  float: right;
-  padding: 0 24px;
-}
-
-#header .ti-search {
-  color: #fff;
-  font-size: 16px;
-  line-height: 46px;
-}
-
-#header .btn-search:hover {
-  background-color: red;
-}
 #nav .subnav {
   position: absolute;
   top: 100%;
   left: 0;
   display: none;
   min-width: 160px;
+  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -65,4 +48,24 @@
   padding: 0 16px;
   line-height: 40px;
   color: #000;
+}
+
+#nav li .arrow-down {
+  font-size: 12px;
+}
+
+#header .btn-search {
+  float: right;
+  padding: 0 24px;
+  cursor: pointer;
+}
+
+#header .ti-search {
+  color: #fff;
+  font-size: 16px;
+  line-height: 46px;
+}
+
+#header .btn-search:hover {
+  background-color: red;
 }

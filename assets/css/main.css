@@ -6,9 +6,16 @@
 
 /* sharing effect */
 .text-white {
-  color: #fff;
+  color: #fff !important;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
 /* separate effect */
 
 #main {
@@ -21,10 +28,60 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 #content {
 }
 
+#content .content-section {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+}
+
+#content .content-heading {
+  font-size: 30px;
+  margin: 10px 0;
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+#content .content-sub-heading {
+  margin: 15px 0;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+#content .content-desc {
+  text-align: justify;
+  margin: 15px 0;
+  line-height: 1.4;
+}
+
+#content .member-list {
+  padding: 32px 0;
+  text-align: center;
+}
+
+#content .member-item {
+  float: left;
+  width: 33.33333%;
+}
+
+#content .member-name {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.member-img {
+  width: 154px;
+  border-radius: 4px;
+}
+
+.tour-section {
+  background-color: #000;
+}
 #footer {
 }
