@@ -1,6 +1,6 @@
 #slider {
   position: relative;
-  top: 46px;
+  margin-top: 46px;
   background: url("/music_band/assets/imgs/slider/newyork.jpg") top center/cover
     no-repeat;
   padding-top: 50%;
