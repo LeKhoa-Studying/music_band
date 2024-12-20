@@ -188,17 +188,23 @@
         </header>
 
         <div class="modal-body">
-          <label for="" class="modal-label">
+          <label for="ticket-quantity" class="modal-label">
             <i class="ti-shopping-cart"></i>
             Tickets, $15 per person
           </label>
-          <input type="text" class="modal-input" placeholder="How many?" />
+          <input
+            id="ticket-quantity"
+            type="text"
+            class="modal-input"
+            placeholder="How many?"
+          />
 
-          <label for="" class="modal-label">
+          <label for="ticket-email" class="modal-label">
             <i class="ti-user"></i>
             Send To
           </label>
           <input
+            id="ticket-email"
             type="text"
             class="modal-input"
             placeholder="Enter your email"
@@ -245,6 +251,11 @@
       modal_Close.addEventListener("click", hiddenModal);
 
       modal_Window.addEventListener("click", hiddenModal);
+
+      // 2* Improve UX for [event close]
+      modal_Container.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
     </script>
   </body>
 </html>
