@@ -173,7 +173,7 @@
 /* Modal window */
 
 .modal-win {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
@@ -183,6 +183,10 @@
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-win.open {
+  display: flex;
 }
 
 .modal-container {

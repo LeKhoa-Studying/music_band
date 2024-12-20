@@ -122,7 +122,9 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-buy-button">Buy Tickets</button>
+                  <button class="place-buy-button js-buy-ticket">
+                    Buy Tickets
+                  </button>
                 </div>
               </div>
               <div class="place-item">
@@ -138,7 +140,9 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="place-buy-button">Buy Tickets</button>
+                  <button class="place-buy-button js-buy-ticket">
+                    Buy Tickets
+                  </button>
                 </div>
               </div>
               <div class="place-item">
@@ -154,7 +158,9 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo. ^^
                   </p>
-                  <button class="place-buy-button">Buy Tickets</button>
+                  <button class="place-buy-button js-buy-ticket">
+                    Buy Tickets
+                  </button>
                 </div>
               </div>
               <div class="clear"></div>
@@ -170,9 +176,9 @@
       <div id="footer"></div>
     </div>
 
-    <div class="modal-win">
-      <div class="modal-container">
-        <div class="modal-close">
+    <div class="modal-win js-modal-win">
+      <div class="modal-container js-modal-container">
+        <div class="modal-close js-modal-close">
           <i class="ti-close"></i>
         </div>
 
@@ -208,5 +214,37 @@
         </footer>
       </div>
     </div>
+
+    <script>
+      // Khai bao bien
+      const buyBtns = document.querySelectorAll(".js-buy-ticket");
+      const modal_Window = document.querySelector(".js-modal-win");
+      const modal_Close = document.querySelector(".js-modal-close");
+      const modal_Container = document.querySelector(".js-modal-container");
+
+      // =========== All Functions =============
+
+      // 1. Open Modal when click on button
+      function openModal() {
+        modal_Window.classList.add("open");
+      }
+
+      // 2.Close Modal [Buy Tickets]
+      function hiddenModal() {
+        modal_Window.classList.remove("open");
+      }
+
+      // =========== All Trigger events ===========
+
+      // 1. Event open modal
+      for (const buyBtn of buyBtns) {
+        buyBtn.addEventListener("click", openModal);
+      }
+
+      // 2.Event close
+      modal_Close.addEventListener("click", hiddenModal);
+
+      modal_Window.addEventListener("click", hiddenModal);
+    </script>
   </body>
 </html>
