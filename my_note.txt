@@ -26,4 +26,12 @@ git push -u origin main: Đẩy nhánh mới lên remote repository
 4. Merge branch
 
 
+==
+Trước khi thực hiện code cho button [Buy Tickets] thì ta cần hiểu nó nó là gì.
+
+1. Biểu mẫu được trigger khi click on button được gọi là Modal-Window
+link: https://en.wikipedia.org/wiki/Modal_window
+
+
+
 

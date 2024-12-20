@@ -169,3 +169,16 @@
 #footer {
   height: 1000px;
 }
+
+/* Modal window */
+
+.modal-win {
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #ccc;
+}
