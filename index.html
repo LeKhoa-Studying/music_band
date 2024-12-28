@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clone [w3_musicband]</title>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/236x/5c/b2/ca/5cb2cad55e497f257b519a0d83c87ca9.jpg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/slider.css" />
@@ -16,19 +21,19 @@
     <div id="main">
       <div id="header">
         <ul id="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Band</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#band">Band</a></li>
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
             <a href="">
               More
               <i class="arrow-down ti-arrow-circle-down"></i>
             </a>
             <ul class="subnav">
-              <li><a href="">Merchandise</a></li>
-              <li><a href="">Extras</a></li>
-              <li><a href="">Media</a></li>
+              <li><a href="#">Merchandise</a></li>
+              <li><a href="#">Extras</a></li>
+              <li><a href="#">Media</a></li>
             </ul>
           </li>
         </ul>
@@ -38,7 +43,7 @@
         </div>
       </div>
       <div id="slider">
-        <div class="text-section text-white">
+        <div class="text-section text-white" id="band">
           <h3 class="text-heading">New York</h3>
           <p class="text-desc">The atmosphere in New York is lorem ipsum.</p>
         </div>
@@ -61,8 +66,8 @@
             ea commodo consequat.
           </p>
 
-          <div class="member-list">
-            <div class="member-item">
+          <div class="row member-list">
+            <div class="col col-3">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -71,7 +76,7 @@
               />
             </div>
 
-            <div class="member-item">
+            <div class="col col-3">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -80,7 +85,7 @@
               />
             </div>
 
-            <div class="member-item">
+            <div class="col col-3">
               <p class="member-name text-center">Name</p>
               <img
                 class="member-img"
@@ -88,13 +93,11 @@
                 alt="Member name"
               />
             </div>
-
-            <div class="clear"></div>
           </div>
         </div>
 
         <!-- break -->
-        <div class="tour-section">
+        <div class="tour-section" id="tour">
           <div class="content-section">
             <h2 class="content-heading text-center text-white">TOUR DATES</h2>
             <p class="content-sub-heading text-center text-white">
@@ -108,8 +111,8 @@
               <li>November <span class="quantity">3</span></li>
             </ul>
 
-            <div class="places-list">
-              <div class="place-item">
+            <div class="row places-list">
+              <div class="col col-3">
                 <img
                   src="./assets/imgs/places/place1.jpg"
                   alt="New York"
@@ -127,7 +130,7 @@
                   </button>
                 </div>
               </div>
-              <div class="place-item">
+              <div class="col col-3">
                 <img
                   src="./assets/imgs/places/place2.jpg"
                   alt="Paris"
@@ -145,7 +148,7 @@
                   </button>
                 </div>
               </div>
-              <div class="place-item">
+              <div class="col col-3">
                 <img
                   src="./assets/imgs/places/place3.jpg"
                   alt="San Francisco"
@@ -163,17 +166,93 @@
                   </button>
                 </div>
               </div>
-              <div class="clear"></div>
             </div>
           </div>
         </div>
 
-        <div class="content-section">
+        <div class="content-section" id="contact">
           <h2 class="content-heading text-center">CONTACT</h2>
           <p class="content-sub-heading text-center">Fan? Drop a note!</p>
+          <div class="row contact-section">
+            <!-- Cột Trái -->
+            <div class="col col-2 contact-left">
+              <p>
+                <i class="icon-contact ti-location-pin"></i>
+                Chicago, US
+              </p>
+              <p>
+                <i class="icon-contact ti-mobile"></i>
+                Phone: +00 151515
+              </p>
+              <p>
+                <i class="icon-contact ti-email"></i>
+                Email: mail@mail.com
+              </p>
+            </div>
+            <!-- Cột Phải -->
+            <div class="col col-2 contact-right">
+              <form action="">
+                <!-- Hàng 1 -->
+                <div class="row row-1st">
+                  <!-- Hàng 1, cột 1 -->
+                  <div class="col col-2">
+                    <input
+                      placeholder="Name"
+                      required
+                      type="text"
+                      name=""
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                  <!-- Hàng 1, cột 2 -->
+                  <div class="col col-2">
+                    <input
+                      placeholder="Email"
+                      required
+                      type="email"
+                      name=""
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <!-- Hàng 2 -->
+                <div class="row row-2nd">
+                  <div class="col col-1">
+                    <input
+                      placeholder="Message"
+                      required
+                      type="text"
+                      name=""
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+
+                <input class="contact-btn-send" type="submit" value="SEND" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="map-section">
+          <img src="./assets/imgs/map.jpg" alt="Map" />
         </div>
       </div>
-      <div id="footer"></div>
+      <div id="footer">
+        <div class="social-medias">
+          <a href="#"><i class="ti-facebook"></i></a>
+          <a href="#"><i class="ti-instagram"></i></a>
+          <a href="#"><i class="ti-youtube"></i></a>
+          <a href="#"><i class="ti-pinterest-alt"></i></a>
+          <a href="#"><i class="ti-twitter-alt"></i></a>
+          <a href="#"><i class="ti-linkedin"></i></a>
+        </div>
+        <div class="copyright">
+          Powered by <a href="https://www.w3schools.com/w3css">w3.css</a>
+        </div>
+      </div>
     </div>
 
     <div class="modal-win js-modal-win">

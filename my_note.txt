@@ -25,7 +25,7 @@ git push -u origin main: Đẩy nhánh mới lên remote repository
 
 4. Merge branch
 
-
+*press q to exit [git log]
 ==
 Trước khi thực hiện code cho button [Buy Tickets] thì ta cần hiểu nó nó là gì.
 
@@ -33,5 +33,5 @@ Trước khi thực hiện code cho button [Buy Tickets] thì ta cần hiểu n�
 link: https://en.wikipedia.org/wiki/Modal_window
 
 
-
+2. Tổng quát hóa các hiệu ứng lặp đi lặp lại thành 1 class riêng để tái sử dụng và format css gọn gàng hơn
 

@@ -4,17 +4,49 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 /* sharing effect */
 .text-white {
   color: #fff !important;
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .clear {
   clear: both;
+}
+
+.col {
+  float: left;
+  padding: 0 8px;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.3333%;
+}
+
+.row {
+  margin: 0 -8px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  /* Để clear thành công cần có display */
+  display: block;
 }
 /* separate effect */
 
@@ -38,7 +70,7 @@
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 64px 0;
+  padding: 64px 0 112px;
 }
 
 #content .content-heading {
@@ -64,11 +96,6 @@
 #content .member-list {
   padding: 32px 0;
   text-align: center;
-}
-
-#content .member-item {
-  float: left;
-  width: 33.33333%;
 }
 
 #content .member-name {
@@ -119,14 +146,11 @@
 }
 
 .tour-section .places-list {
-  margin: 32px -8px 0;
-  padding-bottom: 48px;
+  margin-top: 32px;
 }
 
 .tour-section .place-item {
   width: 33.33333%;
-  float: left;
-  padding: 0 8px;
 }
 
 .tour-section .place-img {
@@ -143,6 +167,8 @@
   padding: 16px;
 }
 .tour-section .place-name {
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .tour-section .place-time {
@@ -164,10 +190,6 @@
   padding: 10px 16px;
   display: inline-block;
   font-size: 14px;
-}
-
-#footer {
-  height: 1000px;
 }
 
 /* Modal window */
@@ -273,4 +295,77 @@
 
 .modal-footer a {
   color: #2196f3;
+}
+
+.contact-section {
+  margin: 48px 0;
+}
+
+.contact-left {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-left i[class*="ti-"] {
+  margin-right: 10px;
+  font-weight: 900;
+  color: #000;
+  /* Cách 2, sử dụng khi margin ko thể xử lý dc
+  width: 30px;
+  display: inline-block;
+
+  */
+}
+
+.contact-right {
+  font-size: 15px;
+}
+
+.contact-right .form-control {
+  padding: 8px;
+  border: 2px solid #ccc;
+  width: 100%;
+}
+
+.contact-right .row-1st {
+  margin-bottom: 8px;
+}
+
+.contact-right .contact-btn-send {
+  float: right;
+  font-size: 15px;
+  margin: 16px 0;
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.map-section img {
+  width: 100%;
+}
+
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+
+#footer .social-medias {
+  font-size: 24px;
+}
+
+#footer .social-medias a {
+  text-decoration: none;
+  color: #757575;
+}
+#footer .copyright a,
+#footer .social-medias a:hover {
+  opacity: 0.5;
+}
+
+#footer .copyright {
+  font-size: 15px;
+  margin: 15px 0;
+  color: #757575;
 }
