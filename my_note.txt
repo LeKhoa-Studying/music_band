@@ -22,9 +22,9 @@ git checkout -b main : lệnh tạo branch mới và lập tức nhảy sang bra
 
 git push -u origin main: Đẩy nhánh mới lên remote repository
 
-
+sau này chỉ cần git push origin main là có thể push local git lên remote git on github
 4. Merge branch
-
+*Hiện tại chưa rõ => để sau.
 *press q to exit [git log]
 ==
 Trước khi thực hiện code cho button [Buy Tickets] thì ta cần hiểu nó nó là gì.
